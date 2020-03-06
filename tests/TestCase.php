@@ -16,6 +16,14 @@ class TestCase extends \PHPUnit\Framework\TestCase
     use ClassIsTrait;
 
     /**
+     * @inheritdoc
+     */
+    protected function setUp(): void
+    {
+        parent::setUp();
+    }
+
+    /**
      * @inheritDoc
      */
     protected function tearDown(): void
